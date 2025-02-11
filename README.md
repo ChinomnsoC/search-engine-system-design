@@ -78,11 +78,16 @@ Given that we need a high-performance search system, we should use Elasticsearch
 
 ✔ Why this structure?
 
-The keywords field improves search relevance.
-The category field allows efficient filtering.
-The timestamp field enables sorting by recency.
+- The keywords field improves search relevance.
+- The category field allows efficient filtering.
+- The timestamp field enables sorting by recency.
+
 📌 Indexing Strategy in Elasticsearch
 
 - Title & description → Full-text search
 - Category → Keyword-based filtering
 - Timestamp → Sorting by recency
+
+### Step 4: Implementing Search Functionality and Step 5: Handling Autocomplete with Redis Trie
+
+These are handled in the code file: [`search_studies.py`](search_studies.py)
